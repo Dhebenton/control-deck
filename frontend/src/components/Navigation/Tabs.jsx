@@ -14,18 +14,18 @@ import UsersIcon from '../../assets/navigation/useracc.svg';
 
 function Tabs({ activeTab, setActiveTab }) {
     const tabs = [
-        { id: "dashboard", icon: DashboardIcon, label: "Dashboard" },
-        { id: "atri-ai", icon: AtriAIIcon, label: "Atri AI" },
-        { id: "analytics", icon: AnalyticsIcon, label: "Analytics" },
-        { id: "performance", icon: PerformanceIcon, label: "Performance" },
-        { id: "notifications", icon: NotificationsIcon, label: "Notifications" },
-        { id: "security", icon: SecurityIcon, label: "Security" },
-        { id: "integrations", icon: IntegrationsIcon, label: "Integrations Hub" },
-        { id: "backups", icon: BackupsIcon, label: "Backups & Restore" },
-        { id: "configurations", icon: ConfigurationsIcon, label: "Configurations" },
-        { id: "plans-billing", icon: PlansBillingIcon, label: "Plans & Billing" },
-        { id: "users-access", icon: UsersIcon, label: "Users & Access" },
-        { id: "logs-reports", icon: LogsIcon, label: "Logs & Reports" }
+        { id: "Dashboard", icon: DashboardIcon },
+        { id: "Atri AI", icon: AtriAIIcon },
+        { id: "Analytics", icon: AnalyticsIcon },
+        { id: "Performance", icon: PerformanceIcon },
+        { id: "Notifications", icon: NotificationsIcon },
+        { id: "Security", icon: SecurityIcon },
+        { id: "Integrations Hub", icon: IntegrationsIcon },
+        { id: "Backups & Restore", icon: BackupsIcon },
+        { id: "Configurations", icon: ConfigurationsIcon },
+        { id: "Plans & Billing", icon: PlansBillingIcon },
+        { id: "Users & Access", icon: UsersIcon },
+        { id: "Logs & Reports", icon: LogsIcon }
     ];
 
     return (
@@ -38,7 +38,7 @@ function Tabs({ activeTab, setActiveTab }) {
                 >
                     <div className="tab-content">
                         <img src={tab.icon} alt={tab.label} />
-                        <p className="tab-label">{tab.label}</p>
+                        <p className="tab-label">{tab.id}</p>
                     </div>
                 </button>
             ))}

@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("dashboard");
+  const [activeTab, setActiveTab] = useState("Dashboard");
   const [darkTheme, setDarkTheme] = useState(true)
 
 

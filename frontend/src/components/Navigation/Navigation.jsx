@@ -9,7 +9,7 @@ import UIButton from './EditUIButton';
 import { useState } from 'react';
 
 function Navigation({ activeTab, setActiveTab, darkTheme, setDarkTheme }) {
-    const [closedNav, setClosedNav] = useState(false)
+    const [closedNav, setClosedNav] = useState(false);
     const [opening, setOpening] = useState(false);
 
     function handleClose() {
