@@ -10,7 +10,7 @@ import AISettingsIcon from '../../../assets/dashboard-tabs-icons/atriai/setting.
 import FullScreenIcon from '../../../assets/button-icons/fullscree.svg'
 import StatusDropdown from '../../DropDownMenus/StatusDropdown'
 
-function Menu({ dashboardTab, collapsed, handleCollapse,fadeState  }) {
+function Menu({ dashboardTab, collapsed, handleCollapse, fadeState  }) {
     const tabIconMap = {
         "Overview": OverviewIcon,
         "Performance Intelligence": PerformanceIntelligenceIcon,
@@ -25,7 +25,7 @@ function Menu({ dashboardTab, collapsed, handleCollapse,fadeState  }) {
 
     return (
         <div className="dashboard-menu">
-            <div className={`fade-wrapper ${fadeState}`}>
+            <div className={`fade-wrapper menu ${fadeState}`}>
                 <div className="menu-icon-heading-wrap">
                     <div className={`close-sidebar-wrap ${collapsed ? "closed" : ""}`}>
                         <button className="trans-button" id='open-sidebar-button' onClick={() => handleCollapse("menu")}>

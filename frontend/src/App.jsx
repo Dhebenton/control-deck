@@ -14,7 +14,7 @@ function App() {
       const timeout = setTimeout(() => {
         setRenderedTab(activeTab);
         setFadeState("fade-in");
-      }, 100); // matches .1s fade-out
+      }, 150); // matches .1s fade-out
 
       return () => clearTimeout(timeout);
     }
@@ -22,6 +22,9 @@ function App() {
 
   return (
     <>
+    <p style={{ position: 'absolute', fontSize: '20px', bottom: '30px', color: 'white', left: '20px', zIndex: '20' }}>
+  {activeTab}
+</p>
       <Navigation
         activeTab={activeTab}
         setActiveTab={setActiveTab}
