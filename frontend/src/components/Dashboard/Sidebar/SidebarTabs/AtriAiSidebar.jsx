@@ -35,7 +35,7 @@ function AtriAiSidebar({ dashboardTab, setDashboardTab }) {
                 onClick={() => setDashboardTab("Overview")}
             >
                 <img src={OverviewIcon} />
-                <p className='sidebar-tab-label'>Overview</p>
+                <p>Overview</p>
             </button>
 
 
@@ -49,7 +49,7 @@ function AtriAiSidebar({ dashboardTab, setDashboardTab }) {
                             onClick={() => setDashboardTab(tab.id)}
                         >
                             <img src={tab.icon} />
-                            <p className='sidebar-tab-label'>{tab.id}</p>
+                            <p>{tab.id}</p>
                         </button>
                     ))}
                 </div>

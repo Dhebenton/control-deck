@@ -35,20 +35,14 @@ function Menu({ dashboardTab, collapsed, handleCollapse }) {
                 <p className='dashboard-tab-heading'>{dashboardTab}</p>
             </div>
             <div className="menu-button-wrap">
-                <button className='button-main one' id='full-screen'>
-                    <div className='button-content-wrap'>
-                        <img src={FullScreenIcon} />
-                    </div>
+                <button className='button-main icon-square' id='full-screen'>
+                    <img src={FullScreenIcon} />
                 </button>
                 <button className='button-main'>
-                    <div className='button-content-wrap'>
-                        <p className='button-text'>Go Back</p>
-                    </div>
+                    <p className='button-text'>Go Back</p>
                 </button>
                 <button className='button-main'>
-                    <div className='button-content-wrap'>
-                        <p className='button-text'>Editor</p>
-                    </div>
+                    <p>Editor</p>
                 </button>
                 <StatusDropdown />
             </div>

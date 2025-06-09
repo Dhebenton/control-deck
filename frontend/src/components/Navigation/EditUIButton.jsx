@@ -4,9 +4,7 @@ function UIButton({}) {
     return (
         <>
         <button className="button-main icon-square" id='edit-ui-button'>
-            <div className='button-content-wrap'>
-                <img src={UIIcon} />
-            </div>
+            <img src={UIIcon} />
         </button>
         </>
     )

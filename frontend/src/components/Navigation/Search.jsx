@@ -4,10 +4,8 @@ function Search({}) {
     return (
         <>
             <div className="searchbar">
-                <div className='searchbar-content'>
-                    <img src={SearchIcon} />
-                    <p className='searchbar-placeholder'>Search</p>
-                </div>
+                <img src={SearchIcon} />
+                <p>Search</p>
             </div>
         </>
     )

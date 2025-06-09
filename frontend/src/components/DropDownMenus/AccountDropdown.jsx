@@ -14,35 +14,27 @@ function AccountDropdown({}) {
 
     return (
         <div className='dropdown-wrap account'>
-            <div onClick={handleOpen} className='account-toggle-wrap'>
+            <div onClick={handleOpen} className={`account-toggle-wrap ${open ? 'open' : ``}`}>
                 <img src={ProfilePic}/>
-                <div className={`chev-togg ${open ? 'open' : ``}`}>
-                    <p className='dropdown-heading thiner'>Account</p>
-                    <img src={Chevron} className='chevron'/>
-                </div>
+                <p className='dropdown-heading thiner'>Account</p>
+                <img src={Chevron} className='chevron'/>
             </div>
             <div className={`dropdown account ${open ? 'open' : ''}`}>
-                <div className='dropdown-block top spread'>
+                <div className='dropdown-block top '>
                     <img src={ProfilePic} />
                     <p className='dropdown-heading'>Daniil Hebenton</p>
                 </div>
-                <div className='dropdown-block'> 
-                    <div className="dropdown-block-content-opacity middle">
-                        <img src={SettingsIcon}/>
-                        <p className='dropdown-subheading'>Account settings</p>
-                    </div>
+                <div className='dropdown-block hover'> 
+                    <img src={SettingsIcon}/>
+                    <p className='dropdown-subheading'>Account settings</p>
                 </div>
-                <div className='dropdown-block'> 
-                    <div className="dropdown-block-content-opacity middle">
-                        <img src={WorkspaceIcon}/>
-                        <p className='dropdown-subheading'>Workspace settings</p>
-                    </div>
+                <div className='dropdown-block hover'> 
+                    <img src={WorkspaceIcon}/>
+                    <p className='dropdown-subheading'>Workspace settings</p>
                 </div>
-                <div className='dropdown-block'> 
-                    <div className="dropdown-block-content-opacity middle">
-                        <img src={SignOutIcon}/>
-                        <p className='dropdown-subheading'>Sign Out</p>
-                    </div>
+                <div className='dropdown-block hover'> 
+                    <img src={SignOutIcon}/>
+                    <p className='dropdown-subheading'>Sign Out</p>
                 </div>
             </div>
         </div>

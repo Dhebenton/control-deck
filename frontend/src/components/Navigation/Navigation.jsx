@@ -25,8 +25,8 @@ function Navigation({ activeTab, setActiveTab, darkTheme, setDarkTheme }) {
             <div className="navigation-top">
                 <AccountDropdown />
                 <NotificationDropdown />
-                <button className="trans-button" id="close-navigation" onClick={handleClose}>
-                    <img src={CloseNavigationIcon}/>
+                <button className="trans-button"  onClick={handleClose}>
+                    <img src={CloseNavigationIcon} id="close-navigation"/>
                 </button>
             </div>
             <Search />

@@ -36,10 +36,8 @@ function Tabs({ activeTab, setActiveTab }) {
                     className={`tab ${activeTab === tab.id ? 'active' : ''}`}
                     onClick={() => setActiveTab(tab.id)}
                 >
-                    <div className="tab-content">
-                        <img src={tab.icon} alt={tab.label} />
-                        <p className="tab-label">{tab.id}</p>
-                    </div>
+                    <img src={tab.icon} alt={tab.label} />
+                    <p className="tab-label">{tab.id}</p>
                 </button>
             ))}
         </div>
