@@ -14,7 +14,7 @@ function App() {
       const timeout = setTimeout(() => {
         setRenderedTab(activeTab);
         setFadeState("fade-in");
-      }, 150); // matches .1s fade-out
+      }, 75); // matches .1s fade-out
 
       return () => clearTimeout(timeout);
     }
@@ -32,14 +32,12 @@ function App() {
         setDarkTheme={setDarkTheme}
         fadeState={fadeState}
       />
-      {renderedTab === "Dashboard" && (
-        <Dashboard
-          activeTab={renderedTab}
-          darkTheme={darkTheme}
-          setDarkTheme={setDarkTheme}
-          fadeState={fadeState}
-        />
-      )}
+      <Dashboard
+        activeTab={renderedTab}
+        darkTheme={darkTheme}
+        setDarkTheme={setDarkTheme}
+        fadeState={fadeState}
+      />
     </>
   );
 }
