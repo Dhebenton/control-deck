@@ -75,7 +75,6 @@ function StatusDropdown({}) {
             <button className={`button-main green ${open ? 'open' : ''}`} onClick={handleOpen}>
                     <p>Live</p>
                     <img src={Chevron} className='chevron'/>
-                    <p>{containerHeight}</p>
             </button>
             <div className={`dropdown status ${open ? 'open' : ''}`} >
                 <div className="dropdown-block top account">

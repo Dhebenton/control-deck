@@ -1,4 +1,4 @@
-import Content from "./Content/AtriAI/Content";
+import Content from "./Content/Content";
 import Menu from "./Menu/Menu";
 import Sidebar from "./Sidebar/Sidebar";
 import { useState } from "react";

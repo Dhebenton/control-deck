@@ -10,7 +10,7 @@ import AISettingsIcon from '../../../assets/dashboard-tabs-icons/atriai/setting.
 import FullScreenIcon from '../../../assets/button-icons/fullscree.svg'
 import StatusDropdown from '../../DropDownMenus/StatusDropdown'
 
-function Menu({ dashboardTab, collapsed, handleCollapse }) {
+function Menu({ dashboardTab, collapsed, handleCollapse,fadeState  }) {
     const tabIconMap = {
         "Overview": OverviewIcon,
         "Performance Intelligence": PerformanceIntelligenceIcon,
@@ -25,26 +25,28 @@ function Menu({ dashboardTab, collapsed, handleCollapse }) {
 
     return (
         <div className="dashboard-menu">
-            <div className="menu-icon-heading-wrap">
-                <div className={`close-sidebar-wrap ${collapsed ? "closed" : ""}`}>
-                    <button className="trans-button" id='open-sidebar-button' onClick={() => handleCollapse("menu")}>
-                        <img src={OpenSideBarIcon}/>
-                    </button>
+            <div className={`fade-wrapper ${fadeState}`}>
+                <div className="menu-icon-heading-wrap">
+                    <div className={`close-sidebar-wrap ${collapsed ? "closed" : ""}`}>
+                        <button className="trans-button" id='open-sidebar-button' onClick={() => handleCollapse("menu")}>
+                            <img src={OpenSideBarIcon}/>
+                        </button>
+                    </div>
+                    <img src={tabIconMap[dashboardTab] || ""} className='dashboard-tab-icon' />
+                    <p className='dashboard-tab-heading'>{dashboardTab}</p>
                 </div>
-                <img src={tabIconMap[dashboardTab] || ""} className='dashboard-tab-icon' />
-                <p className='dashboard-tab-heading'>{dashboardTab}</p>
-            </div>
-            <div className="menu-button-wrap">
-                <button className='button-main icon-square' id='full-screen'>
-                    <img src={FullScreenIcon} />
-                </button>
-                <button className='button-main'>
-                    <p className='button-text'>Go Back</p>
-                </button>
-                <button className='button-main'>
-                    <p>Editor</p>
-                </button>
-                <StatusDropdown />
+                <div className="menu-button-wrap">
+                    <button className='button-main icon-square' id='full-screen'>
+                        <img src={FullScreenIcon} />
+                    </button>
+                    <button className='button-main'>
+                        <p className='button-text'>Go Back</p>
+                    </button>
+                    <button className='button-main'>
+                        <p>Editor</p>
+                    </button>
+                    <StatusDropdown />
+                </div>
             </div>
         </div>
     )

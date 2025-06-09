@@ -994,3 +994,91 @@ button {
   width: 54px;
   overflow: hidden;
 }
+
+
+/*--- CONTENT WRAP ---*/
+
+.content {
+  margin: 32px 32px 0 32px;
+  padding-bottom: 24px;
+}
+
+
+
+/* ========================================================
+  DASHBOARD SWITCH ANIMATION
+======================================================== */
+
+
+.fade-wrapper {
+  transition: opacity 0.1s ease;
+  opacity: 1;
+  will-change: opacity;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+/* ========================================================
+  OVERVIEW TAB
+======================================================== */
+
+.overview-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.overview-block {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.overview-block-heading {
+  color: #7F7F83;
+  font-variation-settings: 'slnt' 0, 'wght' 480;
+  font-size: 14px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.overview-tab {
+  border: 1px solid hsla(0, 0%, 100%, .05);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+  transition: all ease .2sa;
+}
+
+.overview-tab:hover {
+  background-color: hsla(0, 0%, 100%, .01);
+  border-color: hsla(0, 0%, 100%, .08);
+}
+
+.overview-heading {
+  color: white;
+  font-size: 14px;
+  margin-bottom: -18px;
+  font-variation-settings: 'slnt' 0, 'wght' 480;
+}
+
+.overview-subheading {
+  color: #7D7D84;
+  font-size: 13px;
+  line-height: 1.6;
+  font-variation-settings: 'slnt' 0, 'wght' 440;
+  text-align: left;
+}
